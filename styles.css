@@ -36,18 +36,17 @@ body {
 
 .aside-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  margin-bottom: 2em;
 }
 
 .aside-container > aside {
-  flex-flow: wrap-reverse;
   margin-bottom: 2em;
 }
 
 @media (min-width: 640px) {
   .aside-container {
     flex-direction: row;
-    margin-bottom: 2em;
   }
 
   .aside-container > aside {
