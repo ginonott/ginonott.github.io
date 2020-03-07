@@ -1,0 +1,176 @@
+/*
+ * Palette
+ *
+ * Primary: #75C991
+ * Primary Dark: #3C7D52
+ * Accent: #A989C9
+ */
+
+/* General Styles */
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.dotted-background {
+  background-image: radial-gradient(#a989c9 10%, transparent 10%);
+  background-size: 15px 15px;
+  background-repeat: repeat;
+}
+
+.dotted-background--small {
+  background-size: 10px 10px;
+}
+
+/* Containers */
+.container {
+  margin: 2em;
+  padding: 1em;
+  box-shadow: -2px 2px 1px 1px #75c991;
+  background: white;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.aside-container > aside {
+  flex-flow: wrap-reverse;
+}
+
+@media (min-width: 640px) {
+  .aside-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+  }
+
+  .aside-container > aside {
+    display: block;
+    flex: 4;
+  }
+
+  .aside-container > aside + * {
+    flex: 12;
+    margin-left: 1em;
+  }
+}
+
+/* Overrides Screen Width */
+.aside-container--wide > aside {
+  flex: 3;
+}
+
+.aside-container--wide > aside + * {
+  flex: 9;
+}
+
+/* Navigation Bar Styling */
+.nav--links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 2em;
+  width: 100%;
+}
+
+.nav--links li {
+  margin-top: 0.5em;
+}
+
+@media (min-width: 800px) {
+  /* Desktop Styles */
+  .nav--links {
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  .nav--links li {
+    margin-right: 0.5em;
+  }
+
+  .nav--links li:not(:last-of-type):after {
+    content: "•";
+    color: #a989c9;
+    margin-left: 0.5em;
+  }
+}
+
+/* Link Styling */
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #555;
+  box-shadow: inset 8px 0px 0 white, inset 0px -6px 0px rgba(117, 201, 145, 0.8);
+}
+
+a:hover {
+  color: #a989c9;
+  box-shadow: inset 8px 0px 0 white, inset 0px -8px 0px rgba(117, 201, 145, 0.8);
+  transition: box-shadow 0.5s ease;
+}
+
+a > .material-icons {
+  text-align: end;
+  position: relative;
+  bottom: -0.2em;
+  font-size: 1em;
+}
+
+/* Heading Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", "Roboto", Helvetica, Arial, sans-serif;
+  border-left: 4px solid #a989c9;
+  padding-left: 0.25em;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+h1 {
+  background-color: #a989c955;
+}
+
+h2 {
+  background-color: #a989c933;
+}
+
+h3 {
+  background-color: #a989c911;
+}
+
+.no-highlight {
+  background-color: unset;
+}
+
+/* CSS "Routing" */
+main > * {
+  /* By default, show nothing */
+  display: none;
+}
+
+main > *:last-child {
+  /* always show the last child */
+  display: block;
+}
+
+main > *:target {
+  /* Display the #hash target */
+  display: block;
+}
+
+main > :target ~ * {
+  /* for any container that is preceded by a :target, do not display */
+  display: none;
+}
