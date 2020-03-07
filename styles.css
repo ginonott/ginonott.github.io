@@ -42,6 +42,7 @@ body {
 }
 
 .aside-container > aside {
+  padding-right: 0.5em;
   margin-bottom: 2em;
 }
 
@@ -130,11 +131,21 @@ h3,
 h4,
 h5,
 h6 {
+  position: relative;
   font-family: "Quicksand", "Roboto", Helvetica, Arial, sans-serif;
   border-left: 4px solid #a989c9;
   padding-left: 0.25em;
   margin-top: 0;
   text-transform: capitalize;
+}
+
+.subheading {
+  position: absolute;
+  right: 1em;
+  bottom: 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #aaa;
 }
 
 h1 {
@@ -177,4 +188,10 @@ main > :target ~ * {
 /* Contact Info */
 .contact-info td ~ td {
   padding-left: 0.5em;
+}
+
+/* Footer */
+
+footer p {
+  font-size: 0.75em;
 }
