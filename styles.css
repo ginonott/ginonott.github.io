@@ -173,3 +173,8 @@ main > :target ~ * {
   /* for any container that is preceded by a :target, do not display */
   display: none;
 }
+
+/* Contact Info */
+.contact-info td ~ td {
+  padding-left: 0.5em;
+}
