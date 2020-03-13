@@ -190,8 +190,111 @@ main > :target ~ * {
   padding-left: 0.5em;
 }
 
+/* Experience Styles */
+.experience-resume-info {
+  display: none;
+}
+
 /* Footer */
 
 footer p {
   font-size: 0.75em;
+}
+
+@media print {
+  /* Set page size and margins */
+  body {
+    height: 11in;
+    width: 8.5in;
+    margin: 0.25in;
+    padding: 0;
+    font-size: 12px;
+    background-image: none !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* no footer */
+  footer {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  /* show only the professional experience container */
+  #about {
+    display: none;
+  }
+
+  #projects {
+    display: none;
+  }
+
+  #contact {
+    display: none;
+  }
+
+  #experience {
+    display: block;
+  }
+
+  /* hide the default header */
+  .experience-header {
+    display: none;
+  }
+
+  /* show the contact info */
+  .experience-resume-info {
+    display: block;
+  }
+
+  .experience-resume-info--contact-info {
+    display: block;
+    font-size: 12px;
+    text-transform: none;
+    color: #555;
+  }
+
+  .aside-container {
+    flex-direction: row;
+  }
+
+  .aside-container > aside {
+    display: block;
+    flex: 4;
+  }
+
+  .aside-container > aside > ul {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .aside-container > aside + * {
+    flex: 12;
+    margin-left: 1em;
+  }
+
+  nav {
+    display: none;
+  }
 }
