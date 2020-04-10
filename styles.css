@@ -131,6 +131,8 @@ h3,
 h4,
 h5,
 h6 {
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-family: "Quicksand", "Roboto", Helvetica, Arial, sans-serif;
   border-left: 4px solid #a989c9;
@@ -139,10 +141,19 @@ h6 {
   text-transform: capitalize;
 }
 
+@media (min-width: 800px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .subheading {
-  position: absolute;
-  right: 1em;
-  bottom: 0;
   font-style: italic;
   font-size: 1rem;
   color: #aaa;

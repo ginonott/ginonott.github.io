@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="dotted-background">
+
+    <!-- NAV START -->
     <nav class="nav container">
       <h1>
         Gino Notto - Software Engineer, Home Cook, Runner
@@ -38,6 +40,9 @@
         </li>
       </ul>
     </nav>
+    <!-- NAV END -->
+
+    <!-- MAIN CONTENT START -->
     <main>
       <div id="template" class="container">
         <h2>template</h2>
@@ -84,7 +89,12 @@
         <div class="experience-header">
           <h2>Professional Experience</h2>
           <p>
-              Opening statement
+            I take pride in producing production quality code. I love to learn new technologies and processes
+            to achieve that goal. I enjoy writing frontend code because I think it has a host of unique challenges such as handling
+            multiple devices and screen sizes, considering people with both permanent and temporary disabilities, maintaining long
+            running application state, working with stakeholders and UX designers, and working in a highly asynchronous environment.
+            I think all pieces of the stack have interesting and unique problems to solve and have
+            enjoyed working as a full stack engineer.
           </p>
         </div>
 
@@ -93,16 +103,21 @@
           <h1>
             Gino Notto <br> <span class="experience-resume-info--contact-info">(716)-243-1953 • ginojnotto@gmail.com • https://ginonott.github.io/website/</span>
           </h1>
-          <p>Mission statement goes here.</p>
+          <p>
+            I am software engineer that takes pride in producing production quality code. I love to learn new technologies and processes
+            to achieve that goal. I have worked on most pieces of the stack and while I like writing frontend code, I enjoy tackling the
+            backend as well.
+          </p>
         </div>
 
         <div class="aside-container">
           <aside class="dotted-background dotted-background--small">
             <h4>Technologies Used</h4>
             <ul>
-              <li>React, Redux, Flux, JQuery</li>
+              <li>React, Redux, Flux, JQuery, Javascript / Typescript</li>
+              <li>Jest, Nightwatch, TestCafe, Cucumber, Pytest, Selenium</li>
               <li>NodeJS, Express, Python, Flask, C++</li>
-              <li>SQLServer, Postgres, SOLR</li>
+              <li>SQLServer, Postgres, SOLR, SQLAlchemy</li>
               <li>Jenkins, Docker, Git</li>
             </ul>
           </aside>
@@ -117,7 +132,7 @@
             <h4>Technologies Used</h4>
             <ul>
               <li>AngularJS (1.x), JQuery</li>
-              <li>PHP, Symfony</li>
+              <li>PHP, Symfony, Doctrine ORM</li>
             </ul>
           </aside>
           <div>
@@ -158,23 +173,43 @@
             </p>
           </div>
         </div>
+
+        <!-- Used when printing via the system dialog -->
+        <div class="experience-resume-info" aria-hidden="true">
+          <div class="aside-container">
+            <aside class="dotted-background dotted-background--small">
+              <h4>Volunteering</h4>
+              <ul>
+                <li>Over 100 hours volunteered</li>
+                <li>Over $10,000 raised for charity</li>
+              </ul>
+            </aside>
+            <div>
+              <h3>Education <span class="subheading">May 2016</span></h3>
+              <p>
+                Bachelor of Sciences in Computer Science, University at Buffalo
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- PROJECTS START -->
       <div id="projects" class="container">
         <h2>projects</h2>
         <p>
           These are projects that I've done in my spare time throughout college
           and my career. If you're more interested in my professional
           experience,
-          <a href="#experience">you can find that here.</a> Some may be on
-          github. While I wish that I could write production grade that is fully
-          tested in my personal projects, its simply too time consuming and
-          plain not fun. Please keep that in mind when looking at any of my
-          github projects.
+          <a href="#experience">you can find that here.</a> Some of these projects may be on
+          github. Fair warning that these projects tend to be slapped together with no test coverage, peer reviews
+          and less than ideal designs. Please keep in mind they do not represent what I consider professional
+          quality code.
         </p>
 
         <br />
 
+        <!-- BUDGET APP START -->
         <div class="aside-container">
           <aside class="dotted-background dotted-background--small">
             <h4>Technologies Used</h4>
@@ -189,35 +224,43 @@
           <div>
             <h3>Better Budget - Home Budgeting App</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod vel
-              nobis ab adipisci sit, doloremque provident dolor facilis
-              laudantium recusandae nisi qui consequatur accusantium odio
-              molestias deserunt corporis? Reiciendis, ullam!
+              A progressive web application that helped my wife and I keep track of our monthly spending and our savings
+              goal. It used Firebase's no SQL DB to store login information, transactions, and other user data. React
+              was used for the view layer and Redux was used to keep components in sync as a lot of components relied on
+              the same global information. I used Firebase serverless functions to schedule and execute reoccurring
+              transactions that could be scheduled on the client. Local storage was used to cache information to reduce
+              database usage. It was also hosted via firebase. Google Authentication was used for login.
             </p>
           </div>
         </div>
+        <!-- BUDGET APP STOP -->
 
+        <!-- WEDDING WEBSITE START -->
         <div class="aside-container">
           <aside class="dotted-background dotted-background--small">
             <h4>Technologies Used</h4>
             <ul>
-              <li><a href="http://vanilla-js.com/">Vanilla JS</a></li>
-              <li>Pug</li>
+              <li><a href="http://vanilla-js.com/">Vanilla JavaScript</a></li>
+              <li>PugJS</li>
               <li>React</li>
               <li>Firebase</li>
+              <li>Netlify</li>
             </ul>
           </aside>
           <div>
             <h3>Wedding Website + RSVP List</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod vel
-              nobis ab adipisci sit, doloremque provident dolor facilis
-              laudantium recusandae nisi qui consequatur accusantium odio
-              molestias deserunt corporis? Reiciendis, ullam!
+              I built a custom website for our <a href="https://ginonott.github.io/wedding/">wedding RSVP website.</a>
+              It used PugJS to compile together a set of various pug templates into static HTML. The HTML was hosted on
+              netlify and came with a minimal amount of Javascript to post RSVPs into the firebase no sql DB.
+
+              I also put together a small React app to view the RSVPs easily as well as filter them.
             </p>
           </div>
         </div>
+        <!-- WEDDING WEBSITE END -->
 
+        <!-- HACKERWAVE START -->
         <div class="aside-container">
           <aside class="dotted-background dotted-background--small">
             <h4>Technologies Used</h4>
@@ -230,14 +273,28 @@
           <div>
             <h3>HackerWave - Retrofitted Smart Microwave</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-              quibusdam magni mollitia perferendis adipisci enim iure nisi
-              quisquam quae quas eaque deleniti, vel ea nobis! Aliquid ab saepe
-              omnis aut?
+              HackerWave was a group project built during a 48 hour hackathon at Cornell. Our idea was to take a
+              microwave and embed a RaspberryPI so that we could scan a barcode on a pre-made meal such as hot pockets
+              and have the microwave know exactly how to cook it perfectly. The project consisted of a flask server
+              that hosted an HTTP service, an android app that would read a barcode and send the barcode information
+              to the microwave, and the code that would interact with the circuitry of the microwave via GPIO pins.
+
+              To make it more difficult and comical, the microwave was from the 1980s and had no wiring diagrams or
+              schematics. I helped decode the voltage signals needed to program the microwave. We used the RaspberryPI to plug into
+              the same circuits that the number pad plugged into. We measured the voltages on the circuit board as buttons
+              were pressed to figure out what signals we had to mimic. Once we had compiled all the possible values, we
+              built a python program to output signals via the gpio pins and a circuit to convert the low voltage power
+              of the RaspberryPI into the high voltage power used by the microwave circuit board.
+
+              By the end of the hackathon, we had an android app that could scan barcodes, send them to the HTTP server,
+              translate that to the instructions needed to program the microwave, and start it. Unfortunately, we burned
+              out the RaspberryPI due to bad wiring (oops).
             </p>
           </div>
         </div>
+        <!-- HACKERWAVE END -->
 
+        <!-- TERRARIUM START -->
         <div class="aside-container">
           <aside class="dotted-background dotted-background--small">
             <h4>Technologies Used</h4>
@@ -256,8 +313,12 @@
             </p>
           </div>
         </div>
-      </div>
+        <!-- TERRARIUM END -->
 
+      </div>
+      <!-- PROJECTS END -->
+
+      <!-- CONTACT ME START -->
       <div id="contact" class="container">
         <h2>Lets Get In Touch</h2>
         <div class="aside-container aside-container--wide">
@@ -288,7 +349,9 @@
           </div>
         </div>
       </div>
+      <!-- CONTACT ME END -->
 
+      <!-- ABOUT ME START -->
       <!-- Note: The last container will be the default one if no # is present -->
       <div id="about" class="container">
         <h2>about me</h2>
@@ -311,15 +374,15 @@
           excepturi, nulla hic vero a ullam sapiente ab, nemo quis?
         </p>
       </div>
+      <!-- ABOUT ME END -->
+
     </main>
+    <!-- MAIN CONTENT END -->
+
+    <!-- EXTRA STYLES & SCRIPTS -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
   </body>
-  <footer>
-      <div class="container">
-        <p>Opinions and views are my own.</p>
-      </div>
-  </footer>
 </html>
