@@ -231,6 +231,8 @@ footer p {
   h6 {
     padding-bottom: 0;
     margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   /* no footer */
@@ -307,5 +309,9 @@ footer p {
 
   nav {
     display: none;
+  }
+
+  .resume-hide {
+    display: none !important;
   }
 }

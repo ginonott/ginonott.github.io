@@ -35,5 +35,11 @@
       "</div>"
     ],
     "description": "Inserts a section with an aside and a project description"
+  },
+  "Bold": {
+    "scope": "html",
+    "prefix": "bold",
+    "body": ["<b>${selectedText}</b>"],
+    "description": "bolds text using the b tag"
   }
 }
