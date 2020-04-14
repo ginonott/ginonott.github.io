@@ -101,33 +101,27 @@
         <div class="experience-header">
           <h2>Professional Experience</h2>
           <p>
-            I take pride in producing production quality code. I love to learn
-            new technologies and processes to achieve that goal. I enjoy writing
-            frontend code because I think it has a host of unique challenges
-            such as handling multiple devices and screen sizes, considering
-            people with both permanent and temporary disabilities, maintaining
-            long running application state, working with stakeholders and UX
-            designers, and working in a highly asynchronous environment. I think
-            all pieces of the stack have interesting and unique problems to
-            solve and have enjoyed working as a full stack engineer.
+            I am a self motivated full stack software engineer that enjoys
+            learning new technologies and processes in order to produce
+            high-quality, fully tested, production-ready code. All challenges
+            are welcome!
           </p>
         </div>
 
         <!-- Used when printing via the system dialog -->
-        <div class="experience-resume-info" aria-hidden="true">
+        <div class="experience-resume-info resume-show" aria-hidden="true">
           <h1>
-            Gino Notto <br />
-            <span class="experience-resume-info--contact-info"
-              >(716)-243-1953 • ginojnotto@gmail.com •
-              https://ginonott.github.io/website/</span
-            >
+            Gino Notto
+            <span class="experience-resume-info--contact-info">
+              (716)-243-1953 • ginojnotto@gmail.com •
+              https://ginonott.github.io/website/
+            </span>
           </h1>
           <p>
-            I am software engineer that takes pride in producing production
-            quality code. I love to learn new technologies and processes to
-            achieve that goal. I have worked on most pieces of the stack and
-            while I like writing frontend code, I enjoy tackling the backend as
-            well.
+            I am a self motivated full stack software engineer that enjoys
+            learning new technologies and processes in order to produce
+            high-quality, fully tested, production-ready code. All challenges
+            are welcome!
           </p>
         </div>
 
@@ -141,7 +135,7 @@
               </li>
               <li>Jest, Nightwatch, TestCafe, Cucumber, Pytest, Selenium</li>
               <li>NodeJS, Express, Python, Flask, C++</li>
-              <li>SQLServer, Postgres, SOLR, SQLAlchemy</li>
+              <li>SQLServer, Postgres, SOLR, SQLAlchemy, Redis</li>
               <li>Jenkins, Docker, Git, Webpack</li>
             </ul>
           </aside>
@@ -149,7 +143,8 @@
             <h3>Bloomberg LP <span class="subheading">2016-Present</span></h3>
             <p>
               Maintained and developed two client facing, full stack, enterprise
-              web applications built primarily using ReactJS and Typescript.
+              web applications built primarily using
+              <b>ReactJS and Typescript</b>.
               <b>Enterprise Access Point (EAP)</b> allows clients to schedule
               custom datasets using an interactive workflow, search across a
               number of different resources using <b>SOLR</b>, download
@@ -158,44 +153,51 @@
               billing, reporting, create tickets, and other self service focused
               workflows.
             </p>
+            <h4>Enterprise Access Point</h4>
             <p>
-              Built <b>dozens of React components</b> including an inner sourced
-              React component library which is being adopted across the firm,
-              maintained a high traffic client facing
-              <b>linked data (JSON-LD) REST API</b> written in <b>Flask</b> and
-              documented in OAS3 that calls out to other micro services. Built
-              <b>two micro frontend</b> frameworks that enabled composing any
-              number of frontend applications together allowing each application
-              to be released independently and control it's own dependencies.
-              Benchmarked React code to find hotspots and optimized them for
-              major performance improvements. Ran accessibility benchmarks using
+              Maintained a high traffic client facing
+              <b>linked data (JSON-LD) REST API</b> written in <b>Flask</b>.
+              Built a dynamic <b> micro frontend</b> framework that enabled
+              composing any number of frontend applications together allowing
+              each application to be released independently and control it's own
+              dependencies. Benchmarked React code to find code hot spots and
+              optimized them for major performance improvements. Produced
+              reports for stakeholders on accessibility benchmarks using
               Lighthouse, ESLint, and ReactAxe.
             </p>
             <p>
               Main technical contact for a high impact project responsible for
               coordinating with another engineering team, identifying and
               mitigating risks, and communicating to the UAT team. Mentored 3
-              teammates to help decrease onboarding time.
+              teammates to help decrease onboarding time. Presented tech reviews
+              that led to the adoption of <b>testing-library/react</b> as well
+              as React Hooks which helped create a better tested and more
+              maintainable code base.
             </p>
+            <h4>Web Community</h4>
             <p>
-              Presented two internal tech talks on internationalization and
-              creating a maintainable code base using
-              <b>Typescript and React Hooks</b>. Presented tech reviews that led
-              to the adoption of <b>testing-library/react</b> as well as React
-              Hooks which helped create a better tested and more maintainable
-              code base. Developed <b>Jenkins</b> pipelines that automated
-              manual processes and workflows such as assigning developers to
-              Pull Requests to decrease review time, run new lint rules against
-              new code, and rerun end to end test on failures. Created Docker
-              files and docker-compose files to allow testing code in CI and
-              local environments more easily.
+              Core maintainer and contributor for an
+              <b>inner source React component library</b> that involved working
+              with the User Experience team and other enterprise engineering
+              teams to create components that could be used across the firm's
+              enterprise websites. The component library became the standard for
+              enterprise web. Presented two internal tech talks on
+              internationalization and creating a maintainable code base using
+              <b>Typescript and React Hooks</b>.
             </p>
+            <h4>Customer Service Center</h4>
             <p>
-              Migrated multiple server side rendered Jade code to client side
-              React code which allowed more maintainable complex workflows as
-              well as wrote E2E tests in Cucumber to prevent regressions. Worked
-              on a micro service and a python library that created custom SOLR
-              queries to show filterable and searchable content to users.
+              Developed <b>Jenkins</b> pipelines that automated manual processes
+              and workflows such as assigning developers to Pull Requests to
+              decrease review time, run new lint rules against new code, and
+              rerun end to end test on failures. Created Docker files and
+              docker-compose files to allow testing code in CI and local
+              environments more easily. Built and maintained a
+              <b>Selenium</b> grid setup to allow E2E tests to run in parallel
+              which cut CI time by half. Built a system to manage runtime
+              feature switches in Redis using git and deployed via Jenkins to
+              allow developers to quickly see what switches are enabled and
+              guard against production switches being changed without approval.
             </p>
           </div>
         </div>
@@ -260,32 +262,39 @@
               Teaching Assistant <span class="subheading">2013-2015</span>
             </h3>
             <p>
-              Responsible for teaching multiple Java labs consisting of between
-              20-30 students each. Each lab consisted of one hour of teaching
-              and one hour of guided hands on assignments. Taught multiple
-              lectures consisting of over 100 students. Developed an application
-              for students to create interactive Java programs to explore object
-              oriented programming concepts.
+              Responsible for teaching multiple <b>Java</b> labs consisting of
+              between <b>20-30 students</b> each. Each lab consisted of one hour
+              of teaching and one hour of guided hands on assignments. Taught
+              multiple lectures consisting of over <b>100 students</b>.
+              Developed an application for students to create interactive Java
+              programs to explore object oriented programming concepts.
             </p>
           </div>
         </div>
 
         <!-- Used when printing via the system dialog -->
-        <div class="experience-resume-info" aria-hidden="true">
+        <div class="resume-show" aria-hidden="true">
           <div class="aside-container">
             <aside class="dotted-background dotted-background--small">
-              <h4>Volunteering</h4>
-              <ul>
-                <li>Over 100 hours volunteered</li>
-                <li>Over $10,000 raised for charity</li>
-                <li>Contributed a small NodeJS enhancement</li>
-              </ul>
+              <h4>Education</h4>
+              <p>
+                <b>B.S. in Computer Science</b>, <br />University at Buffalo<br />
+                May 2016
+              </p>
             </aside>
             <div>
-              <h3>Education <span class="subheading">May 2016</span></h3>
-              <p>
-                Bachelor of Sciences in Computer Science, University at Buffalo
-              </p>
+              <h3>Personal</h3>
+              <ul>
+                <li>
+                  Over 100 hours volunteered planting trees, walking
+                  rehabilitated dogs, working in food pantries and more
+                </li>
+                <li>Over $10,000 raised for the Leukemia & Lymphoma Society</li>
+                <li>
+                  Contributed a small NodeJS enhancement during a NodeJS
+                  conference workshop
+                </li>
+              </ul>
             </div>
           </div>
         </div>
