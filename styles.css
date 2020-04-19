@@ -240,6 +240,21 @@ footer p {
     font-weight: bold;
   }
 
+  h4,
+  h5,
+  h6 {
+    padding-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+  }
+
+  h4 ~ p {
+    margin-left: 8px;
+  }
+
   h1,
   h2 {
     background-color: #a989c955;
@@ -343,5 +358,10 @@ footer p {
 
   nav {
     display: none;
+  }
+
+  ul {
+    padding-inline-start: 24px;
+    margin-left: 0px;
   }
 }
