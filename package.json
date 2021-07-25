@@ -1,0 +1,16 @@
+{
+  "name": "ginonott.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for Gino Notto.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -c=-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginonott/ginonott.github.io.git"
+  },
+  "author": "Gino Notto <ginonotto@gino.codes",
+  "license": "UNLICENSED",
+  "homepage": "https://gino.codes"
+}

@@ -1,381 +1,137 @@
-/*
- * Palette
- *
- * Primary: #75C991
- * Primary Dark: #3C7D52
- * Accent: #A989C9
- */
+/* 
+  Variables
+*/
+:root {
+  --margin: 8px;
+  --margin-less: 4px;
+  --background-color: #f1f1f1;
+  --box-shadow-color: #c4c4c4;
+  --text-color: #333;
+  --accent-color: #367c1c;
+  --accent-color-light: #d9ead3;
+  --accent-color-bright: #589641;
 
-/* General Styles */
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 1.25em;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
-  box-sizing: content-box;
+  /* links */
+  --link-color: var(--accent-color-bright);
+
+  /* background gradient */
+  --background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("background.png");
 }
 
-.dotted-background {
-  background-image: radial-gradient(#a989c9 10%, transparent 10%);
-  background-size: 15px 15px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: black;
+    --text-color: rgb(121, 204, 148);
+    --accent-color: #48a526;
+    --accent-color-light: #d9ead3;
+    --accent-color-bright: #75c957;
+
+    --background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)),
+      url("background.png");
+    --background-color: #3d3d3d;
+    --box-shadow-color: #242424;
+  }
+}
+
+/* Document wide styles */
+* > * {
+  box-sizing: content-box;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.35;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  min-width: 40vw;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: var(--background-image);
   background-repeat: repeat;
 }
 
-.dotted-background--small {
-  background-size: 5px 5px;
-}
-
-/* Containers */
-.container {
-  margin: 2em;
-  padding: 1em;
-  box-shadow: -2px 2px 1px 1px #75c991;
-  background: white;
-}
-
-.aside-container {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 2em;
-}
-
-.aside-container > aside {
-  padding-right: 0.5em;
-  margin-bottom: 2em;
-}
-
-@media (min-width: 640px) {
-  .aside-container {
-    flex-direction: row;
-  }
-
-  .aside-container > aside {
-    display: block;
-    flex: 4;
-  }
-
-  .aside-container > aside + * {
-    flex: 12;
-    margin-left: 1em;
-  }
-}
-
-/* Overrides Screen Width */
-.aside-container--wide > aside {
-  flex: 3;
-}
-
-.aside-container--wide > aside + * {
-  flex: 9;
-}
-
-/* Navigation Bar Styling */
-.nav--links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding-left: 2em;
-  width: 100%;
-}
-
-.nav--links li {
-  margin-top: 0.5em;
-}
-
-@media (min-width: 800px) {
-  /* Desktop Styles */
-  .nav--links {
-    flex-direction: row;
-    padding-left: 0;
-  }
-
-  .nav--links li {
-    margin-right: 0.5em;
-  }
-
-  .nav--links li:not(:last-of-type):after {
-    content: "•";
-    color: #a989c9;
-    margin-left: 0.5em;
-  }
-}
-
-/* Link Styling */
-
-a {
-  text-decoration: none;
-  position: relative;
-  color: #555;
-  box-shadow: inset 8px 0px 0 white, inset 0px -6px 0px rgba(117, 201, 145, 0.8);
-}
-
-a:hover {
-  color: #a989c9;
-  box-shadow: inset 8px 0px 0 white, inset 0px -8px 0px rgba(117, 201, 145, 0.8);
-  transition: box-shadow 0.5s ease;
-}
-
-a > .material-icons {
-  text-align: end;
-  position: relative;
-  bottom: -0.2em;
-  font-size: 1em;
-}
-
-/* Heading Styling */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  font-family: "Quicksand", "Roboto", Helvetica, Arial, sans-serif;
-  border-left: 4px solid #a989c9;
-  padding-left: 0.25em;
-  margin-top: 0;
-  text-transform: capitalize;
-}
-
-@media (min-width: 800px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 8px;
-  }
-}
-
-.subheading {
-  font-style: italic;
-  color: #777;
+  font-family: "Roboto Mono", monospace;
+  color: var(--accent-color);
 }
 
 h1 {
-  background-color: #a989c955;
+  border-bottom: 4px solid var(--accent-color);
 }
 
 h2 {
-  background-color: #a989c933;
+  background-color: var(--accent-color-light);
+  padding-right: auto;
+  display: inline-block;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 2px;
+  text-transform: lowercase;
 }
 
-h3,
-h4,
-h5 {
-  background-color: #a989c911;
+h2::after {
+  content: "://";
 }
 
-.no-highlight {
-  background-color: unset;
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--link-color);
+  border-bottom: 2px dotted var(--link-color);
 }
 
-/* CSS "Routing" */
-main > * {
-  /* By default, show nothing */
-  display: none;
+a:hover {
+  border-bottom: 2px dotted var(--accent-color);
+  color: var(--accent-color);
 }
 
-main > *:last-child {
-  /* always show the last child */
-  display: block;
+ul {
+  list-style: none;
 }
 
-main > *:target {
-  /* Display the #hash target */
-  display: block;
+ul > li {
+  margin-bottom: 16px;
 }
 
-main > :target ~ * {
-  /* for any container that is preceded by a :target, do not display */
-  display: none;
+/* Header Styles */
+header > address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Contact Info */
-.contact-info td ~ td {
-  padding-left: 0.5em;
+header > address > a {
+  margin-bottom: var(--margin);
 }
 
-/* Experience Styles */
-.resume-show {
-  display: none;
-}
-
-/* Footer */
-
-footer p {
-  font-size: 0.75em;
-}
-
-.experience-resume-info h1 {
+/* Nav Styles */
+nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.experience-resume-info--contact-info {
-  font-size: 1.5rem;
-  text-transform: none;
+/* Components */
+.container {
+  padding: 8px;
+  margin: 32px;
+
+  box-shadow: -2px 2px 1px 2px var(--box-shadow-color);
+  background-color: var(--background-color);
 }
 
-@media print {
-  /* Set page size and margins */
-  body {
-    height: 11in;
-    width: 8.5in;
-    margin: 0.25in;
-    padding: 0;
-    font-size: 13px;
-    line-height: 1.5;
-    background-image: none !important;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    padding-bottom: 0;
-    padding-right: 8px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-
-  h4,
-  h5,
-  h6 {
-    padding-right: 8px;
-    margin-left: 8px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: 400;
-  }
-
-  h4 ~ p {
-    margin-left: 8px;
-  }
-
-  h1,
-  h2 {
-    background-color: #a989c955;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    background-color: #a989c933;
-  }
-
-  h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  /* no footer */
-  footer {
-    display: none;
-  }
-
-  main {
-    padding: 0;
-    margin: 0;
-  }
-
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  /* show only the professional experience container */
-  #about {
-    display: none;
-  }
-
-  #projects {
-    display: none;
-  }
-
-  #contact {
-    display: none;
-  }
-
-  #experience {
-    display: block;
-  }
-
-  /* hide the default header */
-  .experience-header {
-    display: none;
-  }
-
-  /* show the contact info */
-  .resume-show {
-    display: block;
-  }
-
-  .resume-hide {
-    display: none !important;
-  }
-
-  .experience-resume-info--contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 12px;
-    text-transform: none;
-    color: #555;
-    float: right;
-    padding-right: 12px;
-  }
-
-  .aside-container {
-    flex-direction: row;
-    margin-bottom: 0;
-  }
-
-  .aside-container > aside {
-    display: block;
-    border-right: 2px solid #75c991;
-    padding-bottom: 0;
-    flex: 4;
-  }
-
-  .aside-container > aside > ul {
-    margin-top: 0;
-    padding-top: 0;
-    margin-left: 0;
-    padding: 1rem;
-  }
-
-  .aside-container > aside + * {
-    flex: 12;
-    margin-left: 1em;
-  }
-
-  nav {
-    display: none;
-  }
-
-  ul {
-    padding-inline-start: 24px;
-    margin-left: 0px;
-  }
+.divider {
+  width: 1px;
+  border-right: 2px dotted var(--accent-color);
 }

@@ -1,501 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gino Notto</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gino Notto - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Quicksand|Roboto"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
   </head>
-
-  <body class="dotted-background">
-    <!-- NAV START -->
-    <nav class="nav container">
-      <a href="#">
-        <h1>
-          Gino Notto - Professional Software Engineer
-        </h1>
-      </a>
-      <ul class="nav--links">
-        <li><a href="#experience">Experience and Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="https://github.com/ginonott">
-            Github
-            <i class="material-icons">
-              launch
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/gino-notto-980665160/">
-            LinkedIn
-            <i class="material-icons">
-              launch
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="gino-notto-resume.pdf">
-            Download Resume
-            <i class="material-icons">
-              description
-            </i>
-          </a>
-        </li>
-      </ul>
+  <body>
+    <header class="container">
+      <h1>Gino Notto, Software Engineer</h1>
+      <address>
+        <a href="tel:+17162431953"> [📱] +1 (716) 243-1953 </a>
+        <a href="mailto:ginonotto@gino.codes">[📧] ginonotto@gino.codes</a>
+      </address>
+    </header>
+    <nav class="container">
+      <a href="#experience">Professional Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <div class="divider"></div>
+      <a href="https://github.com/ginonott" target="_blank">Github</a>
+      <a href="Gino%20Notto%20Resume.pdf" download>Resume</a>
     </nav>
-    <!-- NAV END -->
-
-    <!-- MAIN CONTENT START -->
     <main>
-      <div id="template" class="container">
-        <h2>template</h2>
-        <p>
-          Congrats! You found my template! This is here for easy copy n paste.
-          You probably won't find anything worthwhile here so maybe try
-          <a href="#projects">Projects</a> or
-          <a href="#experience">Experience and Resume</a> instead?
-        </p>
-
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Aside Content</h4>
-            <ul>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item</li>
-            </ul>
-          </aside>
-          <div>
-            <h3>
-              Section with Aside <span class="subheading">2015-Present</span>
-            </h3>
+      <h2 id="skills">Skills</h2>
+      <section class="container">
+        <ul>
+          <li>
+            <h3>Frontend</h3>
+            <p>ReactJS / TypeScript / JavaScript / HTML5 / CSS</p>
+          </li>
+          <li>
+            <h3>Backend</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod vel
-              nobis ab adipisci sit, doloremque provident dolor facilis
-              laudantium recusandae nisi qui consequatur accusantium odio
-              molestias deserunt corporis? Reiciendis, ullam!
+              NodeJS / Webpack / Python / Redis / Postgres / NGINX / GraphQL /
+              SQL / Java / C++ / C
             </p>
-          </div>
-        </div>
-
-        <h1>Heading One <span class="subheading">subheading</span></h1>
-        <h2>Heading Two <span class="subheading">subheading</span></h2>
-        <h3>Heading Three <span class="subheading">subheading</span></h3>
-        <h4>Heading Four <span class="subheading">subheading</span></h4>
-        <h5>Heading Five <span class="subheading">subheading</span></h5>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aperiam
-          eligendi provident similique, voluptatem aspernatur et ullam illo at
-          officia fuga incidunt dolores amet tempore sapiente veritatis odit
-          excepturi hic!
-        </p>
-        <p class="dotted-background dotted-background--small">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias,
-          aspernatur inventore? Perspiciatis nesciunt, eos eveniet fugit dolor
-          quaerat ad eius, perferendis laboriosam, dolores nisi quam similique
-          cum dolorum autem delectus!
-        </p>
+          </li>
+          <li>
+            <h3>Infrastructure</h3>
+            <p>Jenkins / Git / Docker / Terraform / AWS</p>
+          </li>
+        </ul>
+      </section>
+      <h2 id="experience">Experience</h2>
+      <div class="main-content">
+        <section class="container">
+          <h3>Bloomberg LP - Senior Software Engineer (2020 - Present)</h3>
+          <ul>
+            <li>
+              Technical lead for client facing projects in which I was
+              responsible for collaborating with engineering and business teams,
+              proactively identifying dependencies and risks, as well as
+              contributing code. Successfully delivered multiple projects on
+              time including one that led to a $350K contract.
+            </li>
+            <li>
+              Architected and led development on a modular React application
+              that could be deployed within two separate enterprise portals by
+              using the Context API to inject host specific implementations.
+            </li>
+            <li>
+              Leader in the Bloomberg web community which involved providing
+              guidance on best practices and contributing to inner source
+              initiatives across the firm. Such projects include a React
+              component library used across enterprise applications as well as
+              educational materials.
+            </li>
+          </ul>
+        </section>
+        <section class="container">
+          <h3>Bloomberg LP - Software Engineer (2016 - 2020)</h3>
+          <ul>
+            <li>
+              Developed several high traffic client facing JSON-LD REST API
+              endpoints using Python, Flask, and Marshmallow allowing clients to
+              search and request enterprise data.
+            </li>
+            <li>
+              Optimized both the frontend and backend of a full stack web
+              application. Examples include reducing the rendering of 70K+ items
+              from minutes to milliseconds and reducing implementation costs of
+              common tasks from weeks to days.
+            </li>
+            <li>
+              Developed Jenkins CI/CD workflows to ensure reliable software
+              releases. Workflows include automating the verification,
+              packaging, and deployment of various software.
+            </li>
+          </ul>
+        </section>
+        <section class="container">
+          <h3>MCS Solutions - Software Developer (2015 - 2016)</h3>
+          <ul>
+            <li>
+              Migrated an application from inline JQuery scripts and styles to
+              AngularJS. Pages were served via a mix of server side rendered
+              HTML and client-side JavaScript.
+            </li>
+            <li>
+              Utilized PHP Symfony and Doctrine ORM to serve AJAX requests to
+              client side rendered pages.
+            </li>
+            <li>
+              Modified an open source AngularJS chart library built on D3.js to
+              display custom visualizations.
+            </li>
+          </ul>
+        </section>
+        <section class="container">
+          <h3>University at Buffalo - Teaching Assistant (2013 - 2015)</h3>
+          <ul>
+            <li>
+              Responsible for teaching multiple Java labs consisting of between
+              20-30 students each. Taught multiple lectures consisting of 100
+              students.
+            </li>
+            <li>
+              Developed a real time 2D game engine in Java for students to
+              easily create interactive programs to explore object oriented
+              programming concepts.
+            </li>
+          </ul>
+        </section>
       </div>
-
-      <!-- PROJECTS START -->
-      <div id="projects" class="container">
-        <h2>projects</h2>
-        <p>
-          These are projects that I've done in my spare time throughout college
-          and my career. If you're more interested in my professional
-          experience,
-          <a href="#experience">you can find that here.</a> Some of these
-          projects may be on github. Fair warning that these projects tend to be
-          slapped together with no test coverage, peer reviews and less than
-          ideal designs. Please keep in mind they do not represent what I
-          consider professional quality code.
-        </p>
-
-        <br />
-
-        <!-- BUDGET APP START -->
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <ul>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Firebase Database</li>
-              <li>Firebase Serverless Functions</li>
-              <li>Firebase Authentication</li>
-            </ul>
-          </aside>
-          <div>
-            <h3>Better Budget - Home Budgeting App</h3>
-            <p>
-              A progressive web application that helped my wife and I keep track
-              of our monthly spending and our savings goal. It used Firebase's
-              no SQL DB to store login information, transactions, and other user
-              data. React was used for the view layer and Redux was used to keep
-              components in sync as a lot of components relied on the same
-              global information. I used Firebase serverless functions to
-              schedule and execute reoccurring transactions that could be
-              scheduled on the client. Local storage was used to cache
-              information to reduce database usage. It was also hosted via
-              firebase. Google Authentication was used for login.
-            </p>
-          </div>
-        </div>
-        <!-- BUDGET APP STOP -->
-
-        <!-- WEDDING WEBSITE START -->
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <ul>
-              <li><a href="http://vanilla-js.com/">Vanilla JavaScript</a></li>
-              <li>PugJS</li>
-              <li>React</li>
-              <li>Firebase</li>
-              <li>Netlify</li>
-            </ul>
-          </aside>
-          <div>
-            <h3>Wedding Website + RSVP List</h3>
-            <p>
-              I built a custom website for our
-              <a href="https://ginonott.github.io/wedding/"
-                >wedding RSVP website.</a
-              >
-              It used PugJS to compile together a set of various pug templates
-              into static HTML. The HTML was hosted on netlify and came with a
-              minimal amount of Javascript to post RSVPs into the firebase no
-              sql DB. I also put together a small React app to view the RSVPs
-              easily as well as filter them.
-            </p>
-          </div>
-        </div>
-        <!-- WEDDING WEBSITE END -->
-
-        <!-- HACKERWAVE START -->
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <ul>
-              <li>Python</li>
-              <li>Android (Java)</li>
-              <li>RaspberryPI + transistors, wires, and a breadboard</li>
-            </ul>
-          </aside>
-          <div>
-            <h3>HackerWave - Retrofitted Smart Microwave</h3>
-            <p>
-              HackerWave was a group project built during a 48 hour hackathon at
-              Cornell. Our idea was to take a microwave and embed a RaspberryPI
-              so that we could scan a barcode on a pre-made meal such as hot
-              pockets and have the microwave know exactly how to cook it
-              perfectly.
-            </p>
-            <p>
-              The project consisted of a flask server that hosted an HTTP
-              service, an android app that would read a barcode and send the
-              barcode information to the microwave, and the code that would
-              interact with the circuitry of the microwave via GPIO pins. To
-              make it more difficult and comical, the microwave was from the
-              1980s and had no wiring diagrams or schematics. I helped decode
-              the voltage signals needed to program the microwave. We used the
-              RaspberryPI to plug into the same circuits that the number pad
-              plugged into. We measured the voltages on the circuit board as
-              buttons were pressed to figure out what signals we had to mimic.
-              Once we had compiled all the possible values, we built a python
-              program to output signals via the gpio pins and a circuit to
-              convert the low voltage power of the RaspberryPI into the high
-              voltage power used by the microwave circuit board. By the end of
-              the hackathon, we had an android app that could scan barcodes,
-              send them to the HTTP server, translate that to the instructions
-              needed to program the microwave, and start it. Unfortunately, we
-              burned out the RaspberryPI due to bad wiring (oops).
-            </p>
-          </div>
-        </div>
-        <!-- HACKERWAVE END -->
-
-        <!-- TERRARIUM START -->
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <ul>
-              <li>Java</li>
-              <li>Java Swing</li>
-            </ul>
-          </aside>
-          <div>
-            <h3>Terrarium - Graphical Java Teaching Tool</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-              quibusdam magni mollitia perferendis adipisci enim iure nisi
-              quisquam quae quas eaque deleniti, vel ea nobis! Aliquid ab saepe
-              omnis aut?
-            </p>
-          </div>
-        </div>
-        <!-- TERRARIUM END -->
-      </div>
-      <!-- PROJECTS END -->
-
-      <!-- CONTACT ME START -->
-      <div id="contact" class="container">
-        <h2>Lets Get In Touch</h2>
-        <div class="aside-container aside-container--wide">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Contact Info</h4>
-            <table class="contact-info">
-              <tbody>
-                <tr>
-                  <td class="material-icons">phone</td>
-                  <td><a href="tel:+17162431953">(716) 243 1953</a></td>
-                </tr>
-                <tr>
-                  <td class="material-icons">email</td>
-                  <td>
-                    <a href="mailto:gino@gino.codes"
-                      >gino@gino.codes</a
-                    >
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </aside>
-          <div>
-            <p>
-              Are you interested in getting in touch? If so, the best way to do
-              so is to email me at the email address listed.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- CONTACT ME END -->
-
-      <div id="experience" class="container">
-        <!-- Used when printing via the system dialog -->
-        <div class="experience-resume-info">
-          <h1>
-            Gino Notto
-            <span class="experience-resume-info--contact-info">
-              T: (716) 243-1953 | E: gino@gino.codes |
-              W: https://gino.codes/
-            </span>
-          </h1>
-        </div>
-
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <p>
-              <b>Frontend</b>: React, Redux, Typescript / Javascript, CSS, SASS,
-              CSS-in-JS, Webpack, Babel
-            </p>
-            <p>
-              <b>Testing</b>: Jest, Nightwatch, TestCafe, Cucumber, PyTest,
-              Selenium
-            </p>
-            <p><b>Backend</b>: NodeJS, ExpressJS, Python, Flask, C++</p>
-            <p><b>Database</b>: Postgres, Apache SOLR, Redis</p>
-            <p><b>CI</b>: Jenkins, Docker, Git</p>
-          </aside>
-          <div>
-            <h3>
-              Bloomberg LP - Senior Software Engineer<span class="subheading"
-                >2016 - Present</span
-              >
-            </h3>
-            <p>
-              Maintained and developed two client facing, full stack, enterprise
-              web applications built primarily using ReactJS and Typescript.
-              Enterprise Access Point (EAP) allows clients to create, search,
-              purchase, and download financial datasets. Customer Service Center
-              allows users to manage their billing, reporting, create tickets,
-              and other self service focused workflows.
-            </p>
-            <h4>Enterprise Access Point</h4>
-            <ul>
-              <li>
-                Developed multiple client facing JSON-LD REST API endpoints in
-                Python using Flask and documented using Swagger (OAS).
-              </li>
-              <li>
-                Built a micro frontend framework that enabled composing frontend
-                applications together allowing each application to be released
-                independently and control it's own dependencies.
-              </li>
-              <li>
-                Main technical contact for a high impact project responsible for
-                coordinating with another engineering team, identifying and
-                mitigating risks, and communicating to the UAT team.
-              </li>
-            </ul>
-            <h4>Bloomberg Web Community</h4>
-            <ul>
-              <li>
-                Core contributor for an inner sourced React component library
-                which involved building components and working with internal
-                stakeholders across the firm.
-              </li>
-              <li>
-                Presented internal tech talks on internationalization and
-                creating a maintainable code base using Typescript and React
-                Hooks.
-              </li>
-            </ul>
-            <h4>Customer Service Center</h4>
-            <ul>
-              <li>
-                Developed Jenkins pipelines that automated manual processes and
-                workflows such as assigning developers to Pull Requests to
-                decrease review time, run new lint rules against new code, and
-                rerun end to end test on failures.
-              </li>
-              <li>
-                Deployed Selenium grid to cloud computers to allow E2E tests to
-                run in parallel on multiple browsers cutting E2E test time in
-                half and increasing browser coverage.
-              </li>
-              <li class="resume-hide">
-                Built a system to manage runtime feature switches in Redis using
-                git and deployed via Jenkins to allow developers to quickly see
-                what switches are enabled and guard against production switches
-                being changed without approval.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <p><b>Frontend:</b> AngularJS (1.x), Jquery</p>
-            <p><b>Backend:</b> PHP, Symfony, Doctrine ORM</p>
-          </aside>
-          <div>
-            <h3>
-              MCS Solutions - Software Developer<span class="subheading"
-                >2015 - 2016</span
-              >
-            </h3>
-            <ul>
-              <li>
-                Consolidated multiple JQuery script and style tags into
-                AngularJS controllers and stylesheets.
-              </li>
-              <li>
-                Developed interactive client workflows using PHP Symfony to
-                serve data via AJAX by reading from a DB using Doctrine ORM.
-              </li>
-              <li>
-                Created custom interactive charts by forking and modifying an
-                AngularJS library built on top of D3.js.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="aside-container resume-hide">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <p><b>Frontend:</b> AngularJS (1.x)</p>
-            <p><b>Backend:</b> NodeJS, Postgres</p>
-          </aside>
-          <div>
-            <h3>
-              Bloomberg LP Internship
-              <span class="subheading">May 2015 - August 2015</span>
-            </h3>
-            <ul>
-              <li>
-                Installed numerous Learning Management Systems (LMS) on private
-                cloud computers to evaluate.
-              </li>
-              <li>
-                Prototyped an in house built LMS that used AngularJS, NodeJS and
-                Postgres to store student progress and content.
-              </li>
-              <li>
-                Developed custom learning workflows such as interactive data
-                driven quizzes, a custom HTML5 video player interface, and
-                progress dashboards.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="aside-container">
-          <aside class="dotted-background dotted-background--small">
-            <h4>Technologies Used</h4>
-            <p>Java, Java Swing, CVS, Microsoft PowerPoint</p>
-          </aside>
-          <div>
-            <h3>
-              University at Buffalo - Teaching Assistant
-              <span class="subheading">2013 - 2015</span>
-            </h3>
-            <ul>
-              <li>
-                Responsible for teaching multiple Java labs consisting of
-                between 20-30 students each.
-              </li>
-              <li>
-                Taught multiple lectures consisting of over 100 students.
-              </li>
-              <li>
-                Developed a real time 2D game engine in Java for students to
-                create interactive programs to explore object oriented
-                programming concepts.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Used when printing via the system dialog -->
-        <div>
-          <div class="aside-container">
-            <aside class="dotted-background dotted-background--small">
-              <h3>Education</h3>
-              <p>
-                <b>B.S. in Computer Science</b>, <br />University at Buffalo<br />
-                May 2016
-              </p>
-            </aside>
-            <div>
-              <h3>Personal</h3>
-              <ul>
-                <li>
-                  Over 100 hours volunteered planting trees, walking
-                  rehabilitated dogs, working in food pantries and teaching high
-                  school students python code.
-                </li>
-                <li>
-                  Over $10,000 raised for the Leukemia & Lymphoma Society.
-                </li>
-                <li>
-                  Contributed a NodeJS enhancement during a NodeJS conference
-                  workshop.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2 id="education">Education</h2>
+      <section class="container">
+        <h3>
+          University at Buffalo, Bachelor's of Science in Computer Science, 2016
+        </h3>
+      </section>
     </main>
-    <!-- MAIN CONTENT END -->
-
-    <!-- EXTRA STYLES & SCRIPTS -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
   </body>
 </html>
