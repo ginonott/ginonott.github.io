@@ -31,8 +31,11 @@
       <a href="#education">Education</a>
       <div class="divider"></div>
       <a href="https://github.com/ginonott" target="_blank">Github</a>
-      <a href="Gino%20Notto%20Resume.pdf" download>Resume</a>
+      <a href="Gino%20Notto%20Resume.pdf" target="_blank">Resume</a>
     </nav>
+    <div class="back-to-top" aria-hidden="true">
+      <a href="#">Back To Top</a>
+    </div>
     <main>
       <h2 id="skills">Skills</h2>
       <section class="container">
@@ -135,11 +138,87 @@
           </ul>
         </section>
       </div>
+      <h2 id="projects">Projects</h2>
+      <section class="container">
+        <h3>Budgeting App - Progressive Web Application for Home Budgeting</h3>
+        <p>
+          I created the budgeting app to track my spending and savings goal.
+        </p>
+        <ul>
+          <li>
+            Progressive web application built with ReactJS and Firebase that
+            tracked spending.
+          </li>
+          <li>
+            Features included being able to set spending goals, savings goals,
+            adding transactions, graphing monthly and yearly spending, and
+            creating recurring transactions.
+          </li>
+          <li>
+            Recurring transactions implemented using Firebase's serverless
+            functions. The function checks the database every 15 minutes to see
+            if transaction needs to be added.
+          </li>
+        </ul>
+        <div class="image-container">
+          <a href="budget_app_home.png">
+            <img src="budget_app_home.png" />
+          </a>
+          <a href="budget_add_transaction.png">
+            <img src="budget_add_transaction.png" />
+          </a>
+          <a href="budget_app_home.png">
+            <img src="budget_app_home.png" />
+          </a>
+        </div>
+      </section>
+      <section class="container">
+        <h3>Hack-R-Wave - Retrofitted Smart Microwave</h3>
+        <p>
+          Hack-R-Wave was a hackathon project in which my team tried to turn a
+          regular microwave into a smart microwave. We wanted to be able to scan
+          any barcode and have the microwave correctly cook the food based on
+          what it was.
+        </p>
+        <p>
+          The project consisted of a Raspberry PI that was connected to the
+          microwave's circuit board, a flask API running on the raspberry pi
+          that could accept commands and send them to the microwave, and an app
+          that could scan a barcode and send a request to the flask server.
+        </p>
+        <ul>
+          <li>
+            Worked on a team of four people to turn a regular microwave into a
+            "smart" microwave.
+          </li>
+          <li>
+            Reverse engineered how the microwave processed button presses.
+            Created circuitry that allowed a Raspberry PI to send commands to
+            the microwave.
+          </li>
+          <li>
+            Created an Android app that could read a barcode and send commands
+            remotely to the Raspberry PI. These commands would set the cook time
+            and turn on the microwave.
+          </li>
+        </ul>
+        <div class="image-container">
+          <a href="hackerwave.png">
+            <img src="hackerwave.png" />
+          </a>
+        </div>
+      </section>
       <h2 id="education">Education</h2>
       <section class="container">
         <h3>
           University at Buffalo, Bachelor's of Science in Computer Science, 2016
         </h3>
+        <ul>
+          <li>
+            Helped organize two hackathons as a member of the University at
+            Buffalo ACM chapter.
+          </li>
+        </ul>
       </section>
     </main>
   </body>
