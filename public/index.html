@@ -2,222 +2,315 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gino Notto - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Gino Notto | Staff Software Engineer</title>
+    <script src="scripts.js" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <header class="container">
-      <h1>Gino Notto, Software Engineer</h1>
-      <address>
-        <a href="tel:+17162431953"> [📱] +1 (716) 243-1953 </a>
-        <a href="mailto:ginonotto@gino.codes">[📧] ginonotto@gino.codes</a>
-      </address>
-    </header>
-    <nav class="container">
-      <a href="#skills">Skills</a>
-      <a href="#experience">Professional Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <div class="divider"></div>
-      <a href="https://github.com/ginonott" target="_blank">Github</a>
-      <a href="assets/Gino%20Notto%20Resume.pdf" target="_blank">Resume</a>
-    </nav>
-    <div class="back-to-top" aria-hidden="true">
-      <a href="#">Back To Top</a>
-    </div>
-    <main>
-      <h2 id="skills">Skills</h2>
-      <section class="container">
-        <ul>
+    <header>
+      <div class="row space-between about-me">
+        <hgroup>
+          <h1>Gino Notto</h1>
+          <sub>Staff Software Engineer</sub>
+        </hgroup>
+        <div class="contact-info container container--dashed row space-between">
+          <address class="column">
+            <a href="mailto:ginojnotto@gmail.com">ginojnotto@gmail.com</a>
+            <a href="tel:+17162431953">+1 (716) 243-1953</a>
+          </address>
+          <aside class="column">
+            <a href="https://linkedin.com/in/gnotto" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/ginonott" target="_blank">Github</a>
+          </aside>
+        </div>
+      </div>
+      <nav class="box">
+        <ul class="row space-around">
           <li>
-            <h3>Frontend</h3>
-            <p>ReactJS / TypeScript / JavaScript / HTML5 / CSS</p>
+            <a href="#home">About Me</a>
           </li>
           <li>
-            <h3>Backend</h3>
-            <p>
-              NodeJS / Webpack / Python / Redis / Postgres / NGINX / GraphQL /
-              SQL / Java / C++ / C
-            </p>
+            <a href="#resume">Resume</a>
           </li>
           <li>
-            <h3>Infrastructure</h3>
-            <p>Jenkins / Git / Docker / Terraform / AWS</p>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
           </li>
         </ul>
-      </section>
-      <h2 id="experience">Experience</h2>
-      <div class="main-content">
-        <section class="container">
-          <h3>Bloomberg LP - Senior Software Engineer (2020 - Present)</h3>
+      </nav>
+    </header>
+    <main>
+      <div data-page="#home" data-root-page="true">
+        <p>
+          Hi, my name is Gino! I'm a Staff Software Engineer experienced in full
+          stack web development. I spent five great years at Bloomberg, learning
+          how to engineer large scale systems across a number of teams. I
+          specialized in frontend development using React and NodeJS. Now I'm at
+          a medical technology company focused on backend development.
+        </p>
+        <p>
+          While I use TypeScript/JavaScript and Python the most, I love learning
+          new languages and technology. Software engineering is constantly
+          evolving which means there's always something new and exciting to
+          learn.
+        </p>
+        <p>
+          I graduated with a B.S. in Computer Science from University at Buffalo
+          in 2016 but have been programming and interested in computing since I
+          was in highschool. My first real program was a console version of
+          Snake written in C++ when I was a Junior in high school. I find joy in
+          getting to build something that hasn't been built before.
+        </p>
+        <p>
+          Outside of work I love to run and am currently training back up to a
+          half marathon. I've also gotten into 3D printing and have been
+          designing 3D models in CAD and Blender to print. I love tinkering with
+          embedded systems and am currently working on a couple Arduino and
+          RaspberryPi projects.
+        </p>
+        <p>
+          Thanks for checking my website! Check the links above if you are
+          interested in my current resume or projects and learning I'm doing.
+          Feel free to get in touch with me at the contact info above.
+        </p>
+      </div>
+      <div data-page="#resume" class="hidden">
+        <aside class="resume-download container container--dashed">
+          <p>Click here to download a PDF version.</p>
+        </aside>
+        <section class="skills">
+          <h3>skills://</h3>
+          <table>
+            <thead>
+              <tr>
+                <th class="type"></th>
+                <th class="technologies"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Backend</td>
+                <td>
+                  Python / Flask / Postgres / Redis / OpenSearch / NGINX /
+                  GraphQL / SQL / NodeJS
+                </td>
+              </tr>
+              <tr>
+                <td>Frontend</td>
+                <td>
+                  JavaScript / TypeScript / React / HTML5 / CSS / Tailwind /
+                  Cypress
+                </td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td>
+                  Kubernetes / AWS Services (Lambda, EC2, EKS, RDS, S3, Etc) /
+                  CI/CD via GithubActions / Celery / Docker
+                </td>
+              </tr>
+              <tr>
+                <td>Tools</td>
+                <td>
+                  Git / Webpack / Pytest / Jest / Flask / ESLint / SQAlchemy
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h3>experience://</h3>
+          <section>
+            <h4>
+              Butterfly Network, Inc - Staff Software Engineer (2021 - Present)
+            </h4>
+            <ul>
+              <li>
+                Currently migrating an asynchronous job system to Celery to push
+                medical images and information to hospital systems in a more
+                scalable and observable way.
+              </li>
+              <li>
+                Participating in a cross-functional group tasked with setting
+                the vision for cloud engineering, prioritizing technical debt,
+                adopting new technologies, and addressing engineering issues.
+              </li>
+              <li>
+                Became a subject matter expert in DICOM, HL7, and FHIR to build
+                and support systems that facilitate the transfer of medical
+                information. Made changes to an open-source DICOM library to
+                reduce the memory footprint by streaming large pixel data out of
+                memory.
+              </li>
+              <li>
+                Proactively improved the customer experience by making key
+                optimizations such as identifying, analyzing, and optimizing
+                expensive queries on the critical path and in some cases
+                completely migrating tables. Query performance improvements
+                decreased response times from minutes to milliseconds.
+              </li>
+              <li>
+                Developed a CLI tool that enables developers to deploy their
+                local code to an EKS cluster, significantly reducing cycle time.
+                This tool speeds up debugging time from days to hours and allows
+                live testing before merging into the main branch, helping to
+                catch bugs and integration issues early.
+              </li>
+              <li>
+                Championed a proposal to unify logging across cloud
+                microservices to increase observability, enable more
+                comprehensive alarming, and allow for quicker discovery of root
+                causes of production issues.
+              </li>
+              <li>
+                Onboarded and contributed to a SwiftUI app within 1 month. Wrote
+                interactive animations and wizards using the IOS Animation
+                framework.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Bloomberg LP - Senior Software Engineer (2016 - 2021)</h4>
+            <ul>
+              <li>
+                Technical lead for client facing projects in which I was
+                responsible for collaborating with engineering and business
+                teams, proactively identifying dependencies and risks, as well
+                as contributing code. Successfully delivered three projects on
+                time including one that led to an initial $350K contract.
+              </li>
+              <li>
+                Architected and led development on a modular React application
+                that could be deployed within two separate enterprise portals by
+                using the Context API to inject host specific implementations.
+              </li>
+              <li>
+                Leader in the Bloomberg web community which involved providing
+                guidance on best practices and contributing to inner source
+                initiatives across the firm such as a shared component library.
+              </li>
+              <li>
+                Developed several high traffic client facing JSON-LD REST API
+                endpoints using Python, Flask, and Marshmallow allowing clients
+                to search and request enterprise data.
+              </li>
+              <li>
+                Optimized both the frontend and backend of a full stack web
+                application. Examples include reducing the rendering of 70K+
+                items from minutes to milliseconds and reducing implementation
+                costs of common tasks from weeks to days by re-architecturing
+                how we create CRUD features.
+              </li>
+              <li>
+                Developed Jenkins CI/CD workflows to ensure reliable software
+                releases. Workflows include automating the verification,
+                packaging, and deployment of various software.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>MCS Solutions - Software Developer (2015 - 2016)</h4>
+            <ul>
+              <li>
+                Migrated an application from inline JQuery scripts and styles to
+                AngularJS v1.4. Pages were served via a mix of server side
+                rendered HTML and client-side JavaScript.
+              </li>
+              <li>
+                Utilized PHP Symfony and Doctrine ORM to serve AJAX requests to
+                client side rendered pages.
+              </li>
+              <li>
+                Modified an open source AngularJS chart library built on D3.js
+                to display custom visualizations.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>University at Buffalo - Teaching Assistant (2013 - 2015)</h4>
+            <ul>
+              <li>
+                Responsible for teaching weekly Java labs consisting of between
+                20-30 students each. Taught at least two lectures consisting of
+                100 students.
+              </li>
+              <li>
+                Developed a real time 2D game engine in Java for students to
+                easily create interactive programs to explore object oriented
+                programming concepts.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3>volunteering://</h3>
           <ul>
             <li>
-              Technical lead for client facing projects in which I was
-              responsible for collaborating with engineering and business teams,
-              proactively identifying dependencies and risks, as well as
-              contributing code. Successfully delivered multiple projects on
-              time including one that led to a $350K contract.
+              Landed a change to the NodeJS project to change C++ macros to
+              compile time static expressions.
             </li>
             <li>
-              Architected and led development on a modular React application
-              that could be deployed within two separate enterprise portals by
-              using the Context API to inject host specific implementations.
+              Contributed to an open-source, browser-based robotic simulation
+              designed to help students practice coding and robotics without the
+              need for physical components.
             </li>
             <li>
-              Leader in the Bloomberg web community which involved providing
-              guidance on best practices and contributing to inner source
-              initiatives across the firm. Such projects include a React
-              component library used across enterprise applications as well as
-              educational materials.
+              Assisted in online and physical classes meant to teach highschool
+              aged students computer science. Answered questions and provided
+              help with coding.
+            </li>
+            <li>
+              Currently building a WordPress powered website for a local
+              historical society to digitize research and provide local history
+              online.
             </li>
           </ul>
         </section>
-        <section class="container">
-          <h3>Bloomberg LP - Software Engineer (2016 - 2020)</h3>
+        <section>
+          <h3>projects://</h3>
+          <aside class="project-callout container container--dashed">
+            You can find pictures and a write up on these projects on the
+            <a href="#projects">projects page</a>.
+          </aside>
           <ul>
             <li>
-              Developed several high traffic client facing JSON-LD REST API
-              endpoints using Python, Flask, and Marshmallow allowing clients to
-              search and request enterprise data.
+              Designed a website that allows programming LEDs frame-by-frame in
+              real time. Features include an interactive timeline, automatic
+              effects such as fade-in/fade-out, multiple scenes saved to a
+              sqlite database, and a remote control interface to play, queue,
+              and stop scenes.
             </li>
             <li>
-              Optimized both the frontend and backend of a full stack web
-              application. Examples include reducing the rendering of 70K+ items
-              from minutes to milliseconds and reducing implementation costs of
-              common tasks from weeks to days.
-            </li>
-            <li>
-              Developed Jenkins CI/CD workflows to ensure reliable software
-              releases. Workflows include automating the verification,
-              packaging, and deployment of various software.
+              Designed modular light fixtures in CAD and 3D printed them. Wired
+              and programmed LEDs running on a Raspberry Pi. Programs include a
+              DFS visualization, snake animations with individual moving agents,
+              and others controlled by physical buttons.
             </li>
           </ul>
         </section>
-        <section class="container">
-          <h3>MCS Solutions - Software Developer (2015 - 2016)</h3>
-          <ul>
-            <li>
-              Migrated an application from inline JQuery scripts and styles to
-              AngularJS. Pages were served via a mix of server side rendered
-              HTML and client-side JavaScript.
-            </li>
-            <li>
-              Utilized PHP Symfony and Doctrine ORM to serve AJAX requests to
-              client side rendered pages.
-            </li>
-            <li>
-              Modified an open source AngularJS chart library built on D3.js to
-              display custom visualizations.
-            </li>
-          </ul>
-        </section>
-        <section class="container">
-          <h3>University at Buffalo - Teaching Assistant (2013 - 2015)</h3>
-          <ul>
-            <li>
-              Responsible for teaching multiple Java labs consisting of between
-              20-30 students each. Taught multiple lectures consisting of 100
-              students.
-            </li>
-            <li>
-              Developed a real time 2D game engine in Java for students to
-              easily create interactive programs to explore object oriented
-              programming concepts.
-            </li>
-          </ul>
+        <section>
+          <h3>education://</h3>
+          <p>University at Buffalo / B.S. in Computer Science / 2012 - 2016</p>
         </section>
       </div>
-      <h2 id="projects">Projects</h2>
-      <section class="container">
-        <h3>Hack-R-Wave - Retrofitted Smart Microwave</h3>
-        <p>
-          Hack-R-Wave was a hackathon project in which my team tried to turn a
-          regular microwave into a smart microwave. We wanted to be able to scan
-          any barcode and have the microwave correctly cook the food based on
-          what it was.
-        </p>
-        <p>
-          The project consisted of a Raspberry PI that was connected to the
-          microwave's circuit board, a flask API running on the raspberry pi
-          that could accept commands and send them to the microwave, and an app
-          that could scan a barcode and send a request to the flask server.
-        </p>
-        <ul>
-          <li>
-            Worked on a team of four people to turn a regular microwave into a
-            "smart" microwave.
-          </li>
-          <li>
-            Reverse engineered how the microwave processed button presses.
-            Created circuitry that allowed a Raspberry PI to send commands to
-            the microwave.
-          </li>
-          <li>
-            Created an Android app that could read a barcode and send commands
-            remotely to the Raspberry PI. These commands would set the cook time
-            and turn on the microwave.
-          </li>
-        </ul>
-        <div class="image-container">
-          <a href="assets/hackerwave.png">
-            <img src="assets/hackerwave.png" />
-          </a>
-        </div>
-      </section>
-      <section class="container">
-        <h3>Budgeting App - Progressive Web Application for Home Budgeting</h3>
-        <ul>
-          <li>
-            Progressive web application built with ReactJS and Firebase that
-            tracked spending.
-          </li>
-          <li>
-            Features included being able to set spending goals, savings goals,
-            adding transactions, graphing monthly and yearly spending, and
-            creating recurring transactions.
-          </li>
-          <li>
-            Recurring transactions implemented using Firebase's serverless
-            functions. The function checks the database every 15 minutes to see
-            if transaction needs to be added.
-          </li>
-        </ul>
-        <div class="image-container">
-          <a href="budget_app_home.png">
-            <img src="assets/budget_app_home.png" />
-          </a>
-          <a href="budget_add_transaction.png">
-            <img src="assets/budget_add_transaction.png" />
-          </a>
-          <a href="budget_app_home.png">
-            <img src="assets/budget_app_home.png" />
-          </a>
-        </div>
-      </section>
-      <h2 id="education">Education</h2>
-      <section class="container">
-        <h3>
-          University at Buffalo, Bachelor's of Science in Computer Science, 2016
-        </h3>
-        <ul>
-          <li>
-            Helped organize two hackathons as a member of the University at
-            Buffalo ACM chapter.
-          </li>
-        </ul>
-      </section>
+      <div data-page="#projects" class="hidden">Projects</div>
+      <div data-page="#blog" class="hidden">Blog</div>
     </main>
   </body>
 </html>
