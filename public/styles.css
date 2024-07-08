@@ -6,7 +6,7 @@
   --text-color-contrast: black;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --text-color: white;
   }
@@ -19,7 +19,7 @@
   a {
     color: white;
   }
-} */
+}
 
 * > * {
   box-sizing: border-box;
