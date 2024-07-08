@@ -33,6 +33,9 @@ function handleLocationChange() {
   if (activeNavLink) {
     activeNavLink.classList.add(ACTIVE_CLASSNAME);
   }
+
+  // new page - make sure we scroll to the top
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 function setup() {
