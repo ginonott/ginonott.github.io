@@ -26,7 +26,7 @@
           <sub>Staff Software Engineer</sub>
         </hgroup>
         <div class="contact-info container container--dashed row space-between">
-          <address class="column">
+          <address class="column contact-info--address">
             <a href="mailto:ginojnotto@gmail.com">ginojnotto@gmail.com</a>
             <a href="tel:+17162431953">+1 (716) 243-1953</a>
           </address>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <nav class="box">
-        <ul class="row space-around">
+        <ul class="row-no-fallback space-around">
           <li>
             <a href="#home">About Me</a>
           </li>
@@ -68,7 +68,9 @@
           While I use TypeScript/JavaScript and Python the most, I love learning
           new languages and technology. Software engineering is constantly
           evolving which means there's always something new and exciting to
-          learn.
+          learn. I have used Java extensively and am familiar with C, C++,
+          Swift. I'm fond of functional languages and would love to spend more
+          time to become proficient in one or two of them.
         </p>
         <p>
           I graduated with a B.S. in Computer Science from University at Buffalo
@@ -82,7 +84,8 @@
           half marathon. I've also gotten into 3D printing and have been
           designing 3D models in CAD and Blender to print. I love tinkering with
           embedded systems and am currently working on a couple Arduino and
-          RaspberryPi projects.
+          RaspberryPi projects. I'm also an avid home cook and would love to
+          hear your favorite recipes.
         </p>
         <p>
           Thanks for checking my website! Check the links above if you are
@@ -95,7 +98,7 @@
           <p>Click here to download a PDF version.</p>
         </aside>
         <section class="skills">
-          <h3>skills://</h3>
+          <h2>skills://</h2>
           <table>
             <thead>
               <tr>
@@ -135,11 +138,11 @@
           </table>
         </section>
         <section>
-          <h3>experience://</h3>
+          <h2>experience://</h2>
           <section>
-            <h4>
+            <h3>
               Butterfly Network, Inc - Staff Software Engineer (2021 - Present)
-            </h4>
+            </h3>
             <ul>
               <li>
                 Currently migrating an asynchronous job system to Celery to push
@@ -186,7 +189,7 @@
             </ul>
           </section>
           <section>
-            <h4>Bloomberg LP - Senior Software Engineer (2016 - 2021)</h4>
+            <h3>Bloomberg LP - Senior Software Engineer (2016 - 2021)</h3>
             <ul>
               <li>
                 Technical lead for client facing projects in which I was
@@ -225,7 +228,7 @@
             </ul>
           </section>
           <section>
-            <h4>MCS Solutions - Software Developer (2015 - 2016)</h4>
+            <h3>MCS Solutions - Software Developer (2015 - 2016)</h3>
             <ul>
               <li>
                 Migrated an application from inline JQuery scripts and styles to
@@ -243,7 +246,7 @@
             </ul>
           </section>
           <section>
-            <h4>University at Buffalo - Teaching Assistant (2013 - 2015)</h4>
+            <h3>University at Buffalo - Teaching Assistant (2013 - 2015)</h3>
             <ul>
               <li>
                 Responsible for teaching weekly Java labs consisting of between
@@ -259,7 +262,7 @@
           </section>
         </section>
         <section>
-          <h3>volunteering://</h3>
+          <h2>volunteering://</h2>
           <ul>
             <li>
               Landed a change to the NodeJS project to change C++ macros to
@@ -283,7 +286,7 @@
           </ul>
         </section>
         <section>
-          <h3>projects://</h3>
+          <h2>projects://</h2>
           <aside class="project-callout container container--dashed">
             You can find pictures and a write up on these projects on the
             <a href="#projects">projects page</a>.
@@ -305,12 +308,103 @@
           </ul>
         </section>
         <section>
-          <h3>education://</h3>
+          <h2>education://</h2>
           <p>University at Buffalo / B.S. in Computer Science / 2012 - 2016</p>
         </section>
       </div>
-      <div data-page="#projects" class="hidden">Projects</div>
-      <div data-page="#blog" class="hidden">Blog</div>
+      <div data-page="#projects" class="hidden">
+        <article>
+          <h2>Light Maze</h2>
+          <div class="gallery">
+            <video
+              src="/assets/light_maze.mp4"
+              alt="A 'moving' light through a series of 3D printed tubes."
+              type="video/mp4"
+              muted
+              loop
+              autoplay
+            >
+              Your browser does not support the video element.
+            </video>
+            <img
+              src="/assets/buttons_light_maze.jpg"
+              alt="3D printed buttons"
+            />
+          </div>
+          <p>
+            This was my first large scale 3D printed project. I designed the
+            base and tubes in CAD using Fusion 360 and printed them on my Bambu
+            A1 Mini.
+          </p>
+          <p>
+            Each tube is wired with a strip of 4 NeoPixels that are soldered
+            together. The NeoPixels are controlled via a RaspberryPi (although
+            its on my list to change that to an Arduino). The whole thing is
+            mounted on 2' x 2' plywood back.
+          </p>
+          <p>
+            I also designed and printed a button panel. Each button is a tactile
+            switch that sends an input signal to the controller. These inputs
+            control the brightness, animation shown, and changes animation
+            "modes". There are several animations I made: a DFS starting from a
+            random point and traveling to another point, an animation with
+            several independent moving "snakes" that travel through the maze,
+            and a fill animation.
+          </p>
+        </article>
+        <article>
+          <h2>HackrWave</h2>
+          <div class="gallery">
+            <img
+              src="/assets/hackerwave.png"
+              alt="An old microwave with a Raspberry Pi wired to it's internal circuit board"
+            />
+          </div>
+          <p>
+            HackrWave was a hackathon project I did during university in which
+            my team tried to turn a regular microwave into a smart microwave. We
+            wanted to be able to scan any barcode and have the microwave
+            correctly cook the food based on what it was.
+          </p>
+          <p>
+            The project consisted of a Raspberry PI that was connected to the
+            microwave's circuit board, a flask API running on the raspberry pi
+            that could accept commands and send them to the microwave, and an
+            app that could scan a barcode and send a request to the flask
+            server.
+          </p>
+          <p>
+            Despite not knowing much about hardware or reverse engineering
+            circuit boards, we were able to successfully send commands to the
+            microwave to input a time, power level, and start and stop it all
+            through a mobile application.
+          </p>
+        </article>
+      </div>
+      <div data-page="#blog" class="hidden">
+        <article>
+          <h2>07/08/2024: Hello, World!</h2>
+          <p>
+            I attended a talk at a conference once where the presenter talked
+            about how they strive to "learn in the open" for others to see. I
+            think there's a lot of value in taking what you learn and putting it
+            in your own words to really cement your understanding. My goal is to
+            <i>try</i> to do just that here.
+          </p>
+          <p>
+            Currently I'm reading two excellent books:
+            <a href="https://staffeng.com/book/" target="_blank"
+              >Staff Engineer: Leadership beyond the management track by Will
+              Larson</a
+            >
+            and
+            <a href="https://g.co/kgs/JnNofUY" target="_blank"
+              >A Philosophy of Software Design by John Ousterhout</a
+            >. Both have had some really great ideas in them that I hope to
+            write down soon.
+          </p>
+        </article>
+      </div>
     </main>
   </body>
 </html>

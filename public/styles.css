@@ -6,7 +6,7 @@
   --text-color-contrast: black;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text-color: white;
   }
@@ -19,7 +19,7 @@
   a {
     color: white;
   }
-}
+} */
 
 * > * {
   box-sizing: border-box;
@@ -43,6 +43,26 @@ h4,
 h5,
 h6 {
   margin-bottom: 8px;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--text-color-contrast);
+  background-color: var(--background-color);
+  width: fit-content;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px dashed var(--border-color);
 }
 
 a {
@@ -62,10 +82,22 @@ a:hover {
 ul {
   list-style: none;
   margin: 0px;
+  padding: 0px;
 }
 
 main {
   margin-top: 16px;
+}
+
+video {
+  width: 360px;
+  object-fit: scale-down;
+}
+
+img {
+  width: 360px;
+  object-fit: scale-down;
+  background-color: black;
 }
 
 /* utility classes */
@@ -86,6 +118,12 @@ main {
   display: flex;
   /* fallback to column for mobile */
   flex-direction: column;
+}
+
+.row-no-fallback {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 540px) {
@@ -135,13 +173,22 @@ header hgroup sub {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .contact-info a {
   margin-bottom: 0.25rem;
 }
 
 @media (min-width: 540px) {
   .contact-info address {
-    margin-right: 2rem;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .contact-info aside {
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 
@@ -176,15 +223,6 @@ header hgroup sub {
   font-weight: bold;
 }
 
-[data-page="#resume"] h3 {
-  color: var(--text-color-contrast);
-  background-color: var(--background-color);
-  width: fit-content;
-  padding-left: 4px;
-  padding-right: 4px;
-  font-family: "Roboto Mono", sans-serif;
-}
-
 [data-page="#resume"] ul {
   list-style: inside "-";
   padding-left: 1rem;
@@ -204,4 +242,15 @@ header hgroup sub {
     float: right;
     margin-left: 1rem;
   }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.gallery > * {
+  border: 1px solid var(--border-color);
+  margin-right: 2rem;
 }
