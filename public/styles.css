@@ -254,3 +254,17 @@ header hgroup sub {
   border: 1px solid var(--border-color);
   margin-right: 2rem;
 }
+
+.profile-pic {
+  border: 2px solid var(--border-color);
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+@media (min-width: 540px) {
+  .profile-pic {
+    float: left;
+  }
+}
